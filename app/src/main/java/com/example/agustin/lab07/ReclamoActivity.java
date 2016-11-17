@@ -88,8 +88,7 @@ public class ReclamoActivity extends AppCompatActivity implements OnMapReadyCall
 
     @Override
     public void onActivityResult(int requestCode,int resultCode, Intent data){
-        System.out.println("ASDASDADASDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        /*
+
         switch(resultCode){
             case Activity.RESULT_OK:{
                 Bundle extras = data.getExtras();
@@ -104,7 +103,7 @@ public class ReclamoActivity extends AppCompatActivity implements OnMapReadyCall
                 break;
             }
         }
-        */
+       
     }
 
 
