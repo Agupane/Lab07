@@ -5,6 +5,7 @@ package com.example.agustin.lab07;
  */
 import com.google.android.gms.maps.model.LatLng;
 
+import java.io.File;
 import java.io.Serializable;
 
 public class Reclamo implements Serializable {
@@ -14,6 +15,7 @@ public class Reclamo implements Serializable {
     private String telefono;
     private String email;
     private String imagenPath;
+    private File foto;
 
     public Reclamo() {
 
@@ -69,7 +71,14 @@ public class Reclamo implements Serializable {
     }
 
     public LatLng getCoordenadas(){
-        LatLng latLng = new LatLng(latitud,latitud);
+        LatLng latLng = new LatLng(latitud,longitud);
         return latLng;
+    }
+
+    public void setFoto(File foto){
+        this.foto=foto;
+    }
+    public File getFoto(){
+        return this.foto;
     }
 }
